@@ -1,0 +1,6 @@
+#clearCanvas {
+    text-align: right; /* Aligns the content of the container to the right */
+    padding: 10px; /* Adds some spacing around the container */
+    position: relative;
+    right: 0;
+}

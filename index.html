@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PlayMakr</title>
+    <script src="xReciever.js"></script>
+    <script src="yReciever.js"></script>
+    <script src="zReciever.js"></script>
+    <script src="center.js"></script>
+    <script src="qb.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="myCanvas" width="600" height="400" style="border:1px solid #000;">
+    Your browser does not support the canvas element.
+</canvas>
+<script>
+    window.onload = function() {
+        drawCircleWithC();
+        drawSquareWithQB();
+    };
+</script>
+<br>
+<div id="xButtons">
+    <button onclick="drawCircleWithX()">Add X reciever</button>
+    <button onclick="drawPost()">Add Post</button>
+    <button onclick="drawArrowLine()">Add Fade</button>
+</div>
+
+<div id="yButtons">
+    <button onclick="drawCircleWithY()">Add Y reciever</button>
+    <button onclick="drawPostY()">Add Post</button>
+    <button onclick="drawArrowLineY()">Add Fade</button>
+</div>
+
+<div id="zButtons">
+<button onclick="drawCircleWithZ()">Add Z reciever</button>
+<button onclick="drawFlatZ()">Add Flat</button>
+<button onclick="drawSlantZ()">Add Slant</button>
+<button onclick="drawCornerZ()">Add Corner</button>
+<button onclick="drawFadeZ()">Add Fade</button>
+<button onclick="drawPostZ()">Add Post</button>
+
+</div>
+
+<button id="clearCanvas" onclick="clearCanvas()">Clear Canvas</button>
+
+</body>
+</html>
